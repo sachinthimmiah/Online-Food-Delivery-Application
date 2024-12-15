@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+      body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        header {
+    background-color: #ff645a;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    margin: 20px;
+    border-radius: 10px;
+    position: fixed;
+    height: 30px;
+}
+
+        header h1 {
+            font-size: 27px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 50px;
+        }
+
+        nav ul li a {
+            position: relative;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            transition: all 0.5s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+            width: 100%;
+            height: 1px;
+            background: black;
+            opacity: 0;
+            z-index: -1;
+            transition: all 0.5s;
+        }
+
+        nav ul li a:hover:after {
+            height: 100%;
+            opacity: 1;
+        }
+
+        .hero {
+            text-align: center;
+            background-image: url(https://img.freepik.com/premium-photo/pan-food-with-variety-ingredients-including-variety-ingredients_1306097-102421.jpg);
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 255, 255);
+            padding: 100px 20px;
+            height: 349px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #ff645a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button:hover {
+            background-color: #ef4839;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ff645a;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
